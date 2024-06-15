@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Clock from "./Component/Clock";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="d-flex bg-black justify-content-evenly p-2 my-5">
+      <div className="col-5 d-flex flex-column m-2 justify-content-center">
+        <h3 className="text-warning">REACT30 - project3</h3>
+        <h1 className="text-light">DIGITAL CLOCK</h1>
+        <h5 className="text-info">LEARNINGS</h5>
+        <p className="text-info">
+          SEITERVAL METHOD IN JAVASCRIPT USEEFFECT HOOK USAGE IN REACTJS
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+      <div className=" col-5 bg-dark p-4 rounde my-5 text-light text-center">
+        Digital Clock
+        <Clock />
+      </div>
     </div>
   );
 }
